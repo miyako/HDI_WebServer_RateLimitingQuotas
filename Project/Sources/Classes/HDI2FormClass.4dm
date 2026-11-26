@@ -4,34 +4,24 @@ property data60 : Boolean
 property data120 : Boolean
 
 property quotaNames : Collection
+property proposedQuotas : Object
+property quotas : Object
 
 
 Class constructor
 	
-	This:C1470.quotaNames:=New collection:C1472()
+	This:C1470.quotaNames:=["inBytesPerMin"; "outBytesPerMin"; "inBytesPerHour"; "outBytesPerHour"; \
+		"nbRequestsPerMin"; "nbRequestsPerHour"; \
+		"inBytesPerMinPerSession"; "outBytesPerMinPerSession"; "inBytesPerHourPerSession"; "outBytesPerHourPerSession"; \
+		"nbRequestsPerMinPerSession"; "nbRequestsPerHourPerSession"; \
+		"nbSessions"; "nbGuestSessions"; "nbEntitySetsPerSession"]
 	
-	This:C1470.quotaNames.push("inBytesPerMin")
-	This:C1470.quotaNames.push("outBytesPerMin")
 	
-	This:C1470.quotaNames.push("inBytesPerHour")
-	This:C1470.quotaNames.push("outBytesPerHour")
+Function initProposedQuotas()
 	
-	This:C1470.quotaNames.push("nbRequestsPerMin")
-	This:C1470.quotaNames.push("nbRequestsPerHour")
-	
-	This:C1470.quotaNames.push("inBytesPerMinPerSession")
-	This:C1470.quotaNames.push("outBytesPerMinPerSession")
-	
-	This:C1470.quotaNames.push("inBytesPerHourPerSession")
-	This:C1470.quotaNames.push("outBytesPerHourPerSession")
-	
-	This:C1470.quotaNames.push("nbRequestsPerMinPerSession")
-	This:C1470.quotaNames.push("nbRequestsPerHourPerSession")
-	
-	This:C1470.quotaNames.push("nbSessions")
-	This:C1470.quotaNames.push("nbGuestSessions")
-	
-	This:C1470.quotaNames.push("nbEntitySetsPerSession")
+	Form:C1466.proposedQuotas:={inBytesPerMin: 4000; outBytesPerMin: 3000; nbRequestsPerMin: 5; \
+		inBytesPerMinPerSession: 2000; outBytesPerMinPerSession: 3000; nbRequestsPerMinPerSession: 5; \
+		nbSessions: 4; nbGuestSessions: 2; nbEntitySetsPerSession: 2}
 	
 	
 Function formEventHandler($formEventCode : Integer)
@@ -50,23 +40,15 @@ Function formEventHandler($formEventCode : Integer)
 				DELAY PROCESS:C323(Current process:C322; 60)
 			End if 
 			
-			Form:C1466.proposedQuotas:={inBytesPerMin: 4000; outBytesPerMin: 3000; nbRequestsPerMin: 5; inBytesPerMinPerSession: 2000; outBytesPerMinPerSession: 3000; nbRequestsPerMinPerSession: 5}
-			Form:C1466.proposedQuotas.nbSessions:=4
-			Form:C1466.proposedQuotas.nbGuestSessions:=2
-			Form:C1466.proposedQuotas.nbEntitySetsPerSession:=2
+			This:C1470.initProposedQuotas()
 			
 			This:C1470.resetQuotas()
 			Form:C1466.quotas:=This:C1470.getQuotas()
 			
-			manageTexts
-			
 			
 		: ($formEventCode=On Page Change:K2:54)
 			
-			Form:C1466.proposedQuotas:={inBytesPerMin: 4000; outBytesPerMin: 3000; nbRequestsPerMin: 5; inBytesPerMinPerSession: 2000; outBytesPerMinPerSession: 3000; nbRequestsPerMinPerSession: 5}
-			Form:C1466.proposedQuotas.nbSessions:=4
-			Form:C1466.proposedQuotas.nbGuestSessions:=2
-			Form:C1466.proposedQuotas.nbEntitySetsPerSession:=2
+			This:C1470.initProposedQuotas()
 			
 			OBJECT SET VISIBLE:C603(*; "Restarting"; False:C215)
 			
@@ -85,14 +67,14 @@ Function formEventHandler($formEventCode : Integer)
 			
 			$signaled:=$signal.wait()
 			
-			OBJECT SET TITLE:C194(*; "Restarting"; "Web server restarted")
+			OBJECT SET TITLE:C194(*; "Restarting"; Localized string("HDI2_Restarted"))
 			OBJECT SET RGB COLORS:C628(*; "Restarting"; 0x0016A34A)
 			
 			Form:C1466.quotas:=This:C1470.getQuotas()
 			
 			SET TIMER:C645(0)
 			
-		: (Form event code:C388=On Close Box:K2:21)
+		: ($formEventCode=On Close Box:K2:21)
 			If (Is Windows:C1573 && Application info:C1599().SDIMode)
 				QUIT 4D:C291
 			Else 
@@ -108,7 +90,7 @@ Function restartWebServer()
 		TRACE:C157
 	End if 
 	
-	OBJECT SET TITLE:C194(*; "Restarting"; "Restarting ... please wait")
+	OBJECT SET TITLE:C194(*; "Restarting"; Localized string("HDI2_Restarting"))
 	OBJECT SET RGB COLORS:C628(*; "Restarting"; 0x00E11D48)
 	OBJECT SET VISIBLE:C603(*; "Restarting"; True:C214)
 	
@@ -190,6 +172,8 @@ Function testNow($action : Text; $option : Text)
 	If (($option#Null:C1517) && ($option#""))
 		$url+="&option="+$option
 	End if 
+	
+	$url+="&lang="+Get database localization(Current localization)
 	
 	OPEN URL:C673($url)
 	

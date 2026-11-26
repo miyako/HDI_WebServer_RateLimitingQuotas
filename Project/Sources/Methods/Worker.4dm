@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 
 #DECLARE($signal : 4D:C1709.Signal)
