@@ -1,19 +1,17 @@
 //%attributes = {"invisible":true}
+// Tab titles and step descriptions come from Resources/<lang>.lproj/HDI2*.xlf
 
+var $i : Integer
+var $key : Text
 
+Infos:=[]
+For ($i; 1; 8)
+	Infos.push({PageNumber: $i; TabTitle: Localized string("HDI2_Tab"+String:C10($i)); Description: Localized string("HDI2_Info"+String:C10($i))})
+End for 
 
+Infos2:=[]
+For each ($key; ["A"; "B"; "C"; "D"; "E"])
+	Infos2.push({Description: Localized string("HDI2_Info"+$key)})
+End for each 
 
-var Infos; Infos2 : Collection
-var objTabs : Object
-
-ARRAY TEXT:C222(Linescode; 0)
-
-
-Infos:=ds:C1482.INFO.query("PageNumber <= 9").orderBy("PageNumber").toCollection()
-objTabs:=New object:C1471("values"; Infos.extract("TabTitle"); "index"; 0)
-
-Infos2:=ds:C1482.INFO.query("PageNumber >= 10").orderBy("PageNumber").toCollection()
-
-
-QUERY:C277([INFO:1]; [INFO:1]PageNumber:4>=1)
-READ WRITE:C146([INFO:1])
+objTabs:={values: Infos.extract("TabTitle"); index: 0}

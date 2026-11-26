@@ -1,0 +1,64 @@
+/* Shared, theme-aware colours (light / dark) */
+
+.TabPageBackground {
+	fill: #FFFFFF;
+	stroke: #CFE3F0;
+}
+
+.SidePanel {
+	fill: #F2F8FD;
+}
+
+.AccentBar {
+	fill: #289FE8;
+}
+
+.AccentLine {
+	stroke: #289FE8;
+}
+
+.StepTitle {
+	stroke: #1A7FC2;
+}
+
+.QuotaInput {
+	fill: #FBFCFE;
+	stroke: #26334D;
+}
+
+.Muted {
+	stroke: #696969;
+}
+
+.Link {
+	stroke: #1E90FF;
+}
+
+@media (prefers-color-scheme: dark) {
+	.TabPageBackground {
+		fill: #1C2733;
+		stroke: #334155;
+	}
+	.SidePanel {
+		fill: #243447;
+	}
+	.AccentBar {
+		fill: #5CB8FF;
+	}
+	.AccentLine {
+		stroke: #5CB8FF;
+	}
+	.StepTitle {
+		stroke: #5CB8FF;
+	}
+	.QuotaInput {
+		fill: #1C2733;
+		stroke: #E2EEF7;
+	}
+	.Muted {
+		stroke: #A0A0A0;
+	}
+	.Link {
+		stroke: #5CB8FF;
+	}
+}

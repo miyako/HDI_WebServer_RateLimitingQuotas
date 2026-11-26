@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="HDI2_Tab1" resname="HDI2_Tab1">
+        <source>Info</source>
+        <target>Info</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab2" resname="HDI2_Tab2">
+        <source>In</source>
+        <target>In</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab3" resname="HDI2_Tab3">
+        <source>Requests</source>
+        <target>Requests</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab4" resname="HDI2_Tab4">
+        <source>In per session</source>
+        <target>In per session</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab5" resname="HDI2_Tab5">
+        <source>Out</source>
+        <target>Out</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab6" resname="HDI2_Tab6">
+        <source>Out per session</source>
+        <target>Out per session</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab7" resname="HDI2_Tab7">
+        <source>Sessions</source>
+        <target>Sessions</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab8" resname="HDI2_Tab8">
+        <source>Entity sets per session</source>
+        <target>Entity sets per session</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleInBytesPerMin" resname="HDI2_TitleInBytesPerMin">
+        <source>The inBytesPerMin quota</source>
+        <target>The inBytesPerMin quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleNbRequestsPerMin" resname="HDI2_TitleNbRequestsPerMin">
+        <source>The nbRequestsPerMin quota</source>
+        <target>The nbRequestsPerMin quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleInBytesPerMinPerSession" resname="HDI2_TitleInBytesPerMinPerSession">
+        <source>The inBytesPerMinPerSession quota</source>
+        <target>The inBytesPerMinPerSession quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleOutBytesPerMin" resname="HDI2_TitleOutBytesPerMin">
+        <source>The outBytesPerMin quota</source>
+        <target>The outBytesPerMin quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleOutBytesPerMinPerSession" resname="HDI2_TitleOutBytesPerMinPerSession">
+        <source>The outBytesPerMinPerSession quota</source>
+        <target>The outBytesPerMinPerSession quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleSessions" resname="HDI2_TitleSessions">
+        <source>The nbSessions and nbGuestSessions quotas</source>
+        <target>The nbSessions and nbGuestSessions quotas</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleNbEntitySetsPerSession" resname="HDI2_TitleNbEntitySetsPerSession">
+        <source>The nbEntitySetsPerSession quota</source>
+        <target>The nbEntitySetsPerSession quota</target>
+      </trans-unit>
+      <trans-unit id="HDI2_UpdateSettings" resname="HDI2_UpdateSettings">
+        <source>Update web server settings</source>
+        <target>Update web server settings</target>
+      </trans-unit>
+      <trans-unit id="HDI2_QuotasObject" resname="HDI2_QuotasObject">
+        <source>WEB Server().quotas object</source>
+        <target>WEB Server().quotas object</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnApply" resname="HDI2_BtnApply">
+        <source>Apply</source>
+        <target>Apply</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnTestNow" resname="HDI2_BtnTestNow">
+        <source>Test now</source>
+        <target>Test now</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnReset" resname="HDI2_BtnReset">
+        <source>Reset</source>
+        <target>Reset</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnRestart" resname="HDI2_BtnRestart">
+        <source>Restart web server</source>
+        <target>Restart web server</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+        <source>Trace</source>
+        <target>Trace</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info1" resname="HDI2_Info1">
+        <source>&lt;span&gt;In this HDI, you'll discover how to set up a &lt;span style="font-weight:bold"&gt;custom rate-limiting system&lt;/span&gt; on your 4D &lt;span style="font-weight:bold"&gt;web server&lt;/span&gt; using &lt;span style="font-weight:bold"&gt;quotas&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#009E60;font-weight:bold"&gt;WEB Server&lt;/span&gt; object exposes a &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object (an instance of the 4D.QuotaManager class).&lt;br/&gt;&lt;br/&gt;This &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object offers several &lt;span style="font-weight:bold"&gt;thresholds that you can tune&lt;/span&gt; to regulate the load on the web server.&lt;br/&gt;&lt;br/&gt;You can set &lt;span style="font-weight:bold"&gt;maximum values&lt;/span&gt; as explained below.&lt;/span&gt;</source>
+        <target>&lt;span&gt;In this HDI, you'll discover how to set up a &lt;span style="font-weight:bold"&gt;custom rate-limiting system&lt;/span&gt; on your 4D &lt;span style="font-weight:bold"&gt;web server&lt;/span&gt; using &lt;span style="font-weight:bold"&gt;quotas&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#009E60;font-weight:bold"&gt;WEB Server&lt;/span&gt; object exposes a &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object (an instance of the 4D.QuotaManager class).&lt;br/&gt;&lt;br/&gt;This &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object offers several &lt;span style="font-weight:bold"&gt;thresholds that you can tune&lt;/span&gt; to regulate the load on the web server.&lt;br/&gt;&lt;br/&gt;You can set &lt;span style="font-weight:bold"&gt;maximum values&lt;/span&gt; as explained below.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info2" resname="HDI2_Info2">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info3" resname="HDI2_Info3">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of requests&lt;/span&gt; the 4D web server can process in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of requests&lt;/span&gt; the 4D web server can process in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info4" resname="HDI2_Info4">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info5" resname="HDI2_Info5">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info6" resname="HDI2_Info6">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info7" resname="HDI2_Info7">
+        <source>&lt;span&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of active sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbGuestSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of Guest sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;First, click the &lt;span style="font-weight:bold"&gt;Restart web server&lt;/span&gt; button to close all the previously created sessions.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set those quotas with the proposed values.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test those quotas.&lt;br/&gt;&lt;br/&gt;Try resetting those quotas and compare the behavior with and without quotas.&lt;/span&gt;</source>
+        <target>&lt;span&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of active sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbGuestSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of Guest sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;First, click the &lt;span style="font-weight:bold"&gt;Restart web server&lt;/span&gt; button to close all the previously created sessions.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set those quotas with the proposed values.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test those quotas.&lt;br/&gt;&lt;br/&gt;Try resetting those quotas and compare the behavior with and without quotas.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info8" resname="HDI2_Info8">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of entity sets a REST session can hold&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of entity sets a REST session can hold&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoA" resname="HDI2_InfoA">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For sessions:&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- nbSessions: maximum number of active sessions&lt;br/&gt;&lt;br/&gt;- nbGuestSessions: maximum number of Guest sessions (i.e., unauthenticated sessions)&lt;br/&gt;&lt;br/&gt;- nbEntitySetsPerSession: maximum number of entity sets per REST session&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For sessions:&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- nbSessions: maximum number of active sessions&lt;br/&gt;&lt;br/&gt;- nbGuestSessions: maximum number of Guest sessions (i.e., unauthenticated sessions)&lt;br/&gt;&lt;br/&gt;- nbEntitySetsPerSession: maximum number of entity sets per REST session&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoB" resname="HDI2_InfoB">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For inbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- inBytesPerMin: maximum number of bytes received per minute&lt;br/&gt;&lt;br/&gt;- inBytesPerHour: maximum number of bytes received per hour&lt;br/&gt;&lt;br/&gt;- nbRequestsPerMin: maximum number of requests received per minute&lt;br/&gt;&lt;br/&gt;- nbRequestsPerHour: maximum number of requests received per hour&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For inbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- inBytesPerMin: maximum number of bytes received per minute&lt;br/&gt;&lt;br/&gt;- inBytesPerHour: maximum number of bytes received per hour&lt;br/&gt;&lt;br/&gt;- nbRequestsPerMin: maximum number of requests received per minute&lt;br/&gt;&lt;br/&gt;- nbRequestsPerHour: maximum number of requests received per hour&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoC" resname="HDI2_InfoC">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For outbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- outBytesPerMin: maximum number of bytes sent per minute&lt;br/&gt;- outBytesPerHour: maximum number of bytes sent per hour&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For outbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- outBytesPerMin: maximum number of bytes sent per minute&lt;br/&gt;- outBytesPerHour: maximum number of bytes sent per hour&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoD" resname="HDI2_InfoD">
+        <source>&lt;span&gt;(*): These quotas are also available at the &lt;span style="font-weight:bold"&gt;session level&lt;/span&gt;.&lt;/span&gt;</source>
+        <target>&lt;span&gt;(*): These quotas are also available at the &lt;span style="font-weight:bold"&gt;session level&lt;/span&gt;.&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoE" resname="HDI2_InfoE">
+        <source>&lt;span&gt;This HDI demonstrates how these quotas can efficiently regulate the server's workload.&lt;/span&gt;</source>
+        <target>&lt;span&gt;This HDI demonstrates how these quotas can efficiently regulate the server's workload.&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

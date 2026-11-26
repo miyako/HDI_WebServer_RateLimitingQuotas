@@ -50,3 +50,8 @@ Project/Trash/
 # Instructions
 #--------------------------------
 .github/instructions
+
+#--------------------------------
+# Local agent tooling (fourdform, tool4d-lsp, ...)
+#--------------------------------
+/tools/

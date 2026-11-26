@@ -1,36 +1,23 @@
-.Buttons_13 {
-	font-family: Lucida Grande;
-	font-size: 13px;
-}
-
-.default {
-	font-family: Lucida Grande;
-	font-size: 13px;
-}
-
-.default1 {
-	font-family: Lucida Grande;
-	font-size: 13px;
-}
-
-.HDI {
-	font-family: Lucida Grande;
-	font-size: 16px;
-	font-weight: bold;
-}
+/* System font: it has Japanese glyphs (Lucida Grande does not) */
 
 .description {
-    font-size: 16px;
+	font-size: 16px;
 }
 
-.TabPageBackground {
-	fill: #EAF5FC;
-	stroke: #CFE3F0;
+@media (form-theme: liquid-glass) {
+	.default {
+		height: 27px;
+	}
+	button.default {
+		height: 27px;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-	.TabPageBackground {
-		fill: #1E2D3D;
-		stroke: #334155;
+@media (form-theme: mac-classic) {
+	.default {
+		height: 23px;
+	}
+	button.default {
+		height: 23px;
 	}
 }

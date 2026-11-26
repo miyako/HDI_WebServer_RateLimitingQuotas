@@ -1,12 +1,12 @@
-// Démo Rate Limiting — 4D Web Server
-// Toutes les requêtes visent la même URL de base.
+// Rate limiting demo — 4D Web Server
+// Every request targets the same base URL.
 const BASE_URL = 'http://127.0.0.1/runDemo';
 
-// --- Etat global / statistiques ---
+// --- Global state / statistics ---
 const stats = { total: 0, ok: 0, e429: 0 };
 let burstRunning = false;
 
-// --- Références DOM ---
+// --- DOM references ---
 const logEl = document.getElementById('log');
 const statTotalEl = document.getElementById('statTotal');
 const statOkEl = document.getElementById('statOk');
@@ -64,7 +64,7 @@ if (queryParams.get('option') === 'newSession') {
     });
 }
 
-// --- Bandeau de quotas ---
+// --- Quota banner ---
 const QUOTA_KEYS = [
   'inBytesPerMin',
   'outBytesPerMin',
@@ -77,16 +77,16 @@ const QUOTA_KEYS = [
   'nbEntitySetsPerSession',
 ];
 
-// --- Utilitaires ---
+// --- Utilities ---
 
-// Construit une chaîne de la taille demandée (en octets, approximatif car UTF-8 sur 1 octet pour ces caractères)
+// Builds a string of the requested size in bytes (these characters are 1 byte in UTF-8)
 function makeBody(sizeInBytes) {
   return 'x'.repeat(Math.max(0, sizeInBytes));
 }
 
 function timestamp() {
   const d = new Date();
-  return d.toLocaleTimeString('fr-FR', { hour12: false }) + '.' + String(d.getMilliseconds()).padStart(3, '0');
+  return d.toLocaleTimeString(LANG, { hour12: false }) + '.' + String(d.getMilliseconds()).padStart(3, '0');
 }
 
 function logLine(text, cssClass) {
@@ -113,14 +113,14 @@ async function loadSessionCounts() {
     nbGuestSessionsEl.textContent = quotas.nbGuestSessions ?? 0;
     nbEntitySetsEl.textContent = quotas.nbEntitySets ?? 0;
   } catch (err) {
-    logLine(`Unable to load the number of sessions: ${err.message}`, 'lerr');
+    logLine(t('Unable to load the number of sessions: {message}', { message: err.message }), 'lerr');
   }
 }
 
 loadSessionCounts();
 btnRefreshSessions.addEventListener('click', loadSessionCounts);
 
-// Envoie une requête et journalise le résultat.
+// Sends a request and logs the result.
 // params: { method, body, querySize, newSession }
 async function sendRequest({ method = 'GET', body = null, querySize = null, newSession = false, authenticate = false } = {}) {
   let url = BASE_URL;
@@ -134,7 +134,7 @@ async function sendRequest({ method = 'GET', body = null, querySize = null, newS
 
   const options = {
     method,
-    credentials: newSession ? 'omit' : 'include', // 'omit' = pas de cookie envoyé => nouvelle session côté serveur
+    credentials: newSession ? 'omit' : 'include', // 'omit' = no cookie sent => new session on the server
   };
   if (body !== null) {
     options.body = body;
@@ -160,7 +160,7 @@ async function sendRequest({ method = 'GET', body = null, querySize = null, newS
     }
 
     const retryAfter = response.headers.get('Retry-After');
-    let details = `${timestamp()}  Done  →  status: ${response.status} - ${duration}ms - Sent to the server: ${sentBytes} bytes, Response received from the server: ${receivedBytes} bytes`;
+    let details = `${timestamp()}  ${t('Done')}  →  status: ${response.status} - ${duration}ms - Sent to the server: ${sentBytes} bytes, Response received from the server: ${receivedBytes} bytes`;
     if (retryAfter !== null) details += `  Retry-After: "${retryAfter}"`;
     if (newSession) details += '  [new session]';
 
@@ -174,13 +174,13 @@ async function sendRequest({ method = 'GET', body = null, querySize = null, newS
   }
 }
 
-// --- Requête simple vers le serveur ---
+// --- Simple request to the server ---
 document.getElementById('btnSendRequest').addEventListener('click', async () => {
   await sendRequest({ method: 'GET', body: null, querySize: null, newSession: false, authenticate: false });
   await loadSessionCounts();
 });
 
-// --- Requête unique : POST avec corps ---
+// --- Single request: POST with a body ---
 document.getElementById('btnPostBody').addEventListener('click', async () => {
   const size = parseInt(document.getElementById('bodySize').value, 10) || 0;
   const newSession = document.getElementById('postNewSession').checked;
@@ -188,7 +188,7 @@ document.getElementById('btnPostBody').addEventListener('click', async () => {
   await loadSessionCounts();
 });
 
-// --- Requête unique : GET avec taille de réponse demandée ---
+// --- Single request: GET with a requested response size ---
 document.getElementById('btnGetData').addEventListener('click', async () => {
   const size = parseInt(document.getElementById('respSize').value, 10) || 0;
   const newSession = document.getElementById('getNewSession').checked;
@@ -196,7 +196,7 @@ document.getElementById('btnGetData').addEventListener('click', async () => {
   await loadSessionCounts();
 });
 
-// --- Rafale de requêtes ---
+// --- Request burst ---
 function buildBurstRequestOptions(type) {
   const prefix = type === 'POST' ? 'burstPost' : 'burstGet';
   const size = parseInt(document.getElementById(`${prefix}Size`).value, 10) || 0;
@@ -220,14 +220,14 @@ async function startBurst(type) {
   stopButton.disabled = false;
 
   for (let i = 1; i <= count && burstRunning; i++) {
-    progressEl.textContent = `Request ${i} / ${count}`;
+    progressEl.textContent = t('Request {i} / {count}', { i, count });
     await sendRequest(buildBurstRequestOptions(type));
     if (delay > 0 && i < count) {
       await new Promise((resolve) => setTimeout(resolve, delay * 1000));
     }
   }
 
-  progressEl.textContent = burstRunning ? 'Burst completed' : 'Burst stopped';
+  progressEl.textContent = burstRunning ? t('Burst completed') : t('Burst stopped');
   burstRunning = false;
  // startButton.disabled = false;
   btnBurstPostStart.disabled = false;
@@ -249,7 +249,7 @@ async function stopBurst(stopButton) {
 btnBurstPostStop.addEventListener('click', () => stopBurst(btnBurstPostStop));
 btnBurstGetStop.addEventListener('click', () => stopBurst(btnBurstGetStop));
 
-// --- Sessions concurrentes  ---
+// --- Concurrent sessions ---
 document.getElementById('btnOpenSessions').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('sessionCount').value, 10) || 0;
   for (let i = 1; i <= count; i++) {
@@ -258,7 +258,7 @@ document.getElementById('btnOpenSessions').addEventListener('click', async () =>
   await loadSessionCounts();
 });
 
-// --- Sessions concurrentes (nbGuestSessions) ---
+// --- Concurrent sessions (nbGuestSessions) ---
 document.getElementById('btnOpenAndAuthenticateSessions').addEventListener('click', async () => {
   const count = parseInt(document.getElementById('authenticatedSessionCount').value, 10) || 0;
   for (let i = 1; i <= count; i++) {
@@ -267,7 +267,7 @@ document.getElementById('btnOpenAndAuthenticateSessions').addEventListener('clic
   await loadSessionCounts();
 });
 
-// Demande la création d'entity sets sur une nouvelle session.
+// Asks for entity sets to be created on a new session.
 async function createEntitySets() {
   const count = parseInt(entitySetCountEl.value, 10) || 0;
 
@@ -277,7 +277,7 @@ async function createEntitySets() {
     const cssClass = result.status === 429 || result.status === 402 ? 'l429' : 'lok';
     logLine(`${timestamp()}  createEntitySet  →  status: ${result.status} - ${JSON.stringify(result)}`, cssClass);
   } catch (err) {
-    logLine(`Unable to create entity sets: ${err.message}`, 'lerr');
+    logLine(t('Unable to create entity sets: {message}', { message: err.message }), 'lerr');
   }
 
   await loadSessionCounts();
@@ -287,7 +287,7 @@ btnCreateEntitySets.addEventListener('click', createEntitySets);
 
 
 
-// --- Divers ---
+// --- Miscellaneous ---
 document.getElementById('btnClearLog').addEventListener('click', () => {
   logEl.innerHTML = '';
   stats.total = 0;

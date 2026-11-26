@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="HDI2" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI2_Tab1" resname="HDI2_Tab1">
+        <source>Info</source>
+        <target>概要</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab2" resname="HDI2_Tab2">
+        <source>In</source>
+        <target>受信</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab3" resname="HDI2_Tab3">
+        <source>Requests</source>
+        <target>リクエスト</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab4" resname="HDI2_Tab4">
+        <source>In per session</source>
+        <target>受信／セッション</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab5" resname="HDI2_Tab5">
+        <source>Out</source>
+        <target>送信</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab6" resname="HDI2_Tab6">
+        <source>Out per session</source>
+        <target>送信／セッション</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab7" resname="HDI2_Tab7">
+        <source>Sessions</source>
+        <target>セッション</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Tab8" resname="HDI2_Tab8">
+        <source>Entity sets per session</source>
+        <target>エンティティセット／セッション</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleInBytesPerMin" resname="HDI2_TitleInBytesPerMin">
+        <source>The inBytesPerMin quota</source>
+        <target>inBytesPerMin クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleNbRequestsPerMin" resname="HDI2_TitleNbRequestsPerMin">
+        <source>The nbRequestsPerMin quota</source>
+        <target>nbRequestsPerMin クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleInBytesPerMinPerSession" resname="HDI2_TitleInBytesPerMinPerSession">
+        <source>The inBytesPerMinPerSession quota</source>
+        <target>inBytesPerMinPerSession クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleOutBytesPerMin" resname="HDI2_TitleOutBytesPerMin">
+        <source>The outBytesPerMin quota</source>
+        <target>outBytesPerMin クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleOutBytesPerMinPerSession" resname="HDI2_TitleOutBytesPerMinPerSession">
+        <source>The outBytesPerMinPerSession quota</source>
+        <target>outBytesPerMinPerSession クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleSessions" resname="HDI2_TitleSessions">
+        <source>The nbSessions and nbGuestSessions quotas</source>
+        <target>nbSessions と nbGuestSessions クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TitleNbEntitySetsPerSession" resname="HDI2_TitleNbEntitySetsPerSession">
+        <source>The nbEntitySetsPerSession quota</source>
+        <target>nbEntitySetsPerSession クォータ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_UpdateSettings" resname="HDI2_UpdateSettings">
+        <source>Update web server settings</source>
+        <target>Web サーバーの設定を更新</target>
+      </trans-unit>
+      <trans-unit id="HDI2_QuotasObject" resname="HDI2_QuotasObject">
+        <source>WEB Server().quotas object</source>
+        <target>WEB Server().quotas オブジェクト</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnApply" resname="HDI2_BtnApply">
+        <source>Apply</source>
+        <target>適用</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnTestNow" resname="HDI2_BtnTestNow">
+        <source>Test now</source>
+        <target>今すぐテスト</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnReset" resname="HDI2_BtnReset">
+        <source>Reset</source>
+        <target>リセット</target>
+      </trans-unit>
+      <trans-unit id="HDI2_BtnRestart" resname="HDI2_BtnRestart">
+        <source>Restart web server</source>
+        <target>Web サーバーを再起動</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+        <source>Trace</source>
+        <target>トレース</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info1" resname="HDI2_Info1">
+        <source>&lt;span&gt;In this HDI, you'll discover how to set up a &lt;span style="font-weight:bold"&gt;custom rate-limiting system&lt;/span&gt; on your 4D &lt;span style="font-weight:bold"&gt;web server&lt;/span&gt; using &lt;span style="font-weight:bold"&gt;quotas&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#009E60;font-weight:bold"&gt;WEB Server&lt;/span&gt; object exposes a &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object (an instance of the 4D.QuotaManager class).&lt;br/&gt;&lt;br/&gt;This &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; object offers several &lt;span style="font-weight:bold"&gt;thresholds that you can tune&lt;/span&gt; to regulate the load on the web server.&lt;br/&gt;&lt;br/&gt;You can set &lt;span style="font-weight:bold"&gt;maximum values&lt;/span&gt; as explained below.&lt;/span&gt;</source>
+        <target>&lt;span&gt;この HDI では、&lt;span style="font-weight:bold"&gt;クォータ&lt;/span&gt;を使って 4D &lt;span style="font-weight:bold"&gt;Web サーバー&lt;/span&gt;に&lt;span style="font-weight:bold"&gt;独自の流量制限（レート制限）&lt;/span&gt;を設定する方法を紹介します。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;WEB Server&lt;/span&gt; オブジェクトは &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; オブジェクト（4D.QuotaManager クラスのインスタンス）を公開しています。&lt;br/&gt;&lt;br/&gt;この &lt;span style="color:#289FE8;font-weight:bold"&gt;quotas&lt;/span&gt; オブジェクトには、Web サーバーの負荷を調整するための&lt;span style="font-weight:bold"&gt;しきい値&lt;/span&gt;がいくつも用意されています。&lt;br/&gt;&lt;br/&gt;以下のとおり、それぞれの&lt;span style="font-weight:bold"&gt;上限値&lt;/span&gt;を設定できます。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info2" resname="HDI2_Info2">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;4D Web サーバーが&lt;span style="font-weight:bold"&gt;1 分間&lt;/span&gt;に受信できる&lt;span style="font-weight:bold"&gt;最大バイト数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;クォータを超えると、次の 1 分間の枠が始まるまで、以降のリクエストには &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; エラーが返されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;クォータを&lt;span style="font-weight:bold"&gt;リセット&lt;/span&gt;して、クォータがある場合とない場合の動作を比べてみましょう。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info3" resname="HDI2_Info3">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of requests&lt;/span&gt; the 4D web server can process in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Once the quota is exceeded, any further request receives a &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; error until the new one-minute window starts.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;4D Web サーバーが&lt;span style="font-weight:bold"&gt;1 分間&lt;/span&gt;に処理できる&lt;span style="font-weight:bold"&gt;最大リクエスト数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;クォータを超えると、次の 1 分間の枠が始まるまで、以降のリクエストには &lt;span style="font-weight:bold"&gt;429 - Too many requests&lt;/span&gt; エラーが返されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;クォータを&lt;span style="font-weight:bold"&gt;リセット&lt;/span&gt;して、クォータがある場合とない場合の動作を比べてみましょう。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info4" resname="HDI2_Info4">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can receive in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</source>
+        <target>&lt;span&gt;1 つの&lt;span style="font-weight:bold"&gt;セッション&lt;/span&gt;が&lt;span style="font-weight:bold"&gt;1 分間&lt;/span&gt;に受信できる&lt;span style="font-weight:bold"&gt;最大バイト数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;注意：&lt;/span&gt;このクォータは、設定後に作成された&lt;span style="font-weight:bold"&gt;新しいセッション&lt;/span&gt;にのみ適用されます。&lt;br/&gt;&lt;br/&gt;そのため、&lt;span style="font-weight:bold"&gt;新しいセッションを作成&lt;/span&gt; チェックボックスも併用して確認してください。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info5" resname="HDI2_Info5">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; the 4D web server can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;Try resetting that quota and compare the behavior with and without the quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;4D Web サーバーが&lt;span style="font-weight:bold"&gt;1 分間&lt;/span&gt;に送信できる&lt;span style="font-weight:bold"&gt;最大バイト数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;クォータを&lt;span style="font-weight:bold"&gt;リセット&lt;/span&gt;して、クォータがある場合とない場合の動作を比べてみましょう。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info6" resname="HDI2_Info6">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of bytes&lt;/span&gt; a &lt;span style="font-weight:bold"&gt;session&lt;/span&gt; can send in a &lt;span style="font-weight:bold"&gt;one-minute window&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;N.B.&lt;/span&gt; Once set, this quota applies only to &lt;span style="font-weight:bold"&gt;new sessions&lt;/span&gt; created after the update.&lt;br/&gt;&lt;br/&gt;That's why you should also use the &lt;span style="font-weight:bold"&gt;Create a new session&lt;/span&gt; checkbox to demonstrate this.&lt;/span&gt;</source>
+        <target>&lt;span&gt;1 つの&lt;span style="font-weight:bold"&gt;セッション&lt;/span&gt;が&lt;span style="font-weight:bold"&gt;1 分間&lt;/span&gt;に送信できる&lt;span style="font-weight:bold"&gt;最大バイト数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;注意：&lt;/span&gt;このクォータは、設定後に作成された&lt;span style="font-weight:bold"&gt;新しいセッション&lt;/span&gt;にのみ適用されます。&lt;br/&gt;&lt;br/&gt;そのため、&lt;span style="font-weight:bold"&gt;新しいセッションを作成&lt;/span&gt; チェックボックスも併用して確認してください。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info7" resname="HDI2_Info7">
+        <source>&lt;span&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of active sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;The &lt;span style="color:#289FE8;font-weight:bold"&gt;nbGuestSessions&lt;/span&gt; quota defines the &lt;span style="font-weight:bold"&gt;maximum number of Guest sessions&lt;/span&gt; the 4D web server can keep alive.&lt;br/&gt;&lt;br/&gt;First, click the &lt;span style="font-weight:bold"&gt;Restart web server&lt;/span&gt; button to close all the previously created sessions.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set those quotas with the proposed values.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test those quotas.&lt;br/&gt;&lt;br/&gt;Try resetting those quotas and compare the behavior with and without quotas.&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;nbSessions&lt;/span&gt; クォータは、4D Web サーバーが維持できる&lt;span style="font-weight:bold"&gt;アクティブなセッションの最大数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;nbGuestSessions&lt;/span&gt; クォータは、4D Web サーバーが維持できる&lt;span style="font-weight:bold"&gt;ゲストセッションの最大数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;まず &lt;span style="font-weight:bold"&gt;Web サーバーを再起動&lt;/span&gt; ボタンをクリックして、これまでに作成したセッションをすべて閉じます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値で 2 つのクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;br/&gt;&lt;br/&gt;クォータを&lt;span style="font-weight:bold"&gt;リセット&lt;/span&gt;して、クォータがある場合とない場合の動作を比べてみましょう。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Info8" resname="HDI2_Info8">
+        <source>&lt;span&gt;It defines the &lt;span style="font-weight:bold"&gt;maximum number of entity sets a REST session can hold&lt;/span&gt;.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Apply&lt;/span&gt; button to set that quota with the proposed value.&lt;br/&gt;&lt;br/&gt;Click the &lt;span style="font-weight:bold"&gt;Test now&lt;/span&gt; button. It will open a web benchmark page in your default browser.&lt;br/&gt;&lt;br/&gt;Use the &lt;span style="color:#009E60;font-weight:bold"&gt;green-highlighted sections&lt;/span&gt; to test that quota.&lt;/span&gt;</source>
+        <target>&lt;span&gt;1 つの REST セッションが保持できる&lt;span style="font-weight:bold"&gt;エンティティセットの最大数&lt;/span&gt;を定義します。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;適用&lt;/span&gt; ボタンをクリックすると、提案値でクォータが設定されます。&lt;br/&gt;&lt;br/&gt;&lt;span style="font-weight:bold"&gt;今すぐテスト&lt;/span&gt; ボタンをクリックすると、既定のブラウザーでベンチマーク用の Web ページが開きます。&lt;br/&gt;&lt;br/&gt;&lt;span style="color:#009E60;font-weight:bold"&gt;緑色で強調表示されたセクション&lt;/span&gt;を使ってクォータの効果を確かめてください。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoA" resname="HDI2_InfoA">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For sessions:&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- nbSessions: maximum number of active sessions&lt;br/&gt;&lt;br/&gt;- nbGuestSessions: maximum number of Guest sessions (i.e., unauthenticated sessions)&lt;br/&gt;&lt;br/&gt;- nbEntitySetsPerSession: maximum number of entity sets per REST session&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;セッション関連：&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- nbSessions：アクティブなセッションの最大数&lt;br/&gt;&lt;br/&gt;- nbGuestSessions：ゲストセッション（未認証のセッション）の最大数&lt;br/&gt;&lt;br/&gt;- nbEntitySetsPerSession：REST セッションあたりのエンティティセットの最大数&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoB" resname="HDI2_InfoB">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For inbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- inBytesPerMin: maximum number of bytes received per minute&lt;br/&gt;&lt;br/&gt;- inBytesPerHour: maximum number of bytes received per hour&lt;br/&gt;&lt;br/&gt;- nbRequestsPerMin: maximum number of requests received per minute&lt;br/&gt;&lt;br/&gt;- nbRequestsPerHour: maximum number of requests received per hour&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;受信トラフィック (*)：&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- inBytesPerMin：1 分あたりの最大受信バイト数&lt;br/&gt;&lt;br/&gt;- inBytesPerHour：1 時間あたりの最大受信バイト数&lt;br/&gt;&lt;br/&gt;- nbRequestsPerMin：1 分あたりの最大リクエスト数&lt;br/&gt;&lt;br/&gt;- nbRequestsPerHour：1 時間あたりの最大リクエスト数&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoC" resname="HDI2_InfoC">
+        <source>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;For outbound traffic (*):&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- outBytesPerMin: maximum number of bytes sent per minute&lt;br/&gt;- outBytesPerHour: maximum number of bytes sent per hour&lt;/span&gt;</source>
+        <target>&lt;span&gt;&lt;span style="color:#289FE8;font-weight:bold"&gt;送信トラフィック (*)：&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;- outBytesPerMin：1 分あたりの最大送信バイト数&lt;br/&gt;- outBytesPerHour：1 時間あたりの最大送信バイト数&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoD" resname="HDI2_InfoD">
+        <source>&lt;span&gt;(*): These quotas are also available at the &lt;span style="font-weight:bold"&gt;session level&lt;/span&gt;.&lt;/span&gt;</source>
+        <target>&lt;span&gt;(*)：これらのクォータは&lt;span style="font-weight:bold"&gt;セッション単位&lt;/span&gt;でも設定できます。&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="HDI2_InfoE" resname="HDI2_InfoE">
+        <source>&lt;span&gt;This HDI demonstrates how these quotas can efficiently regulate the server's workload.&lt;/span&gt;</source>
+        <target>&lt;span&gt;この HDI では、これらのクォータでサーバーの負荷を効率よく制御する方法を紹介します。&lt;/span&gt;</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 
 
 #DECLARE($url : Text; $verb : Text; $cookie : Text) : 4D:C1709.HTTPRequest

@@ -56,19 +56,19 @@
 			"objects": {
 				"BtnDemo": {
 					"type": "button",
-					"top": 520,
+					"top": 516,
 					"left": 614,
 					"width": 90,
-					"height": 20,
 					"action": "Accept",
 					"shortcutKey": "[Return]",
-					"text": "Demo",
-					"class": "default1",
+					"text": ":xliff:HDI_BtnDemo",
+					"class": "default",
 					"focusable": false,
 					"defaultButton": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/BtnDemo.4dm"
 				},
 				"Icon4D": {
 					"type": "picture",
@@ -94,8 +94,8 @@
 					"left": 130,
 					"width": 300,
 					"height": 17,
-					"stroke": "#696969",
-					"text": "{version} and above"
+					"text": ":xliff:HDI_TxtVersion",
+					"class": "Muted"
 				},
 				"labelVersion": {
 					"type": "text",
@@ -106,7 +106,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Version:"
+					"text": ":xliff:HDI_LabelVersion"
 				},
 				"labelBlog": {
 					"type": "text",
@@ -117,7 +117,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Blog:"
+					"text": ":xliff:HDI_LabelBlog"
 				},
 				"labelInfo": {
 					"type": "text",
@@ -128,7 +128,7 @@
 					"stroke": "automatic",
 					"textAlign": "right",
 					"fontWeight": "bold",
-					"text": "Info:"
+					"text": ":xliff:HDI_LabelInfo"
 				},
 				"txtBlog": {
 					"type": "input",
@@ -137,7 +137,6 @@
 					"width": 300,
 					"height": 17,
 					"dataSource": "Form:C1466.blog",
-					"stroke": "#1E90FF",
 					"textDecoration": "underline",
 					"focusable": false,
 					"fill": "transparent",
@@ -148,7 +147,8 @@
 					"method": "ObjectMethods/txtBlog.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "Link"
 				},
 				"txtInfo": {
 					"type": "input",
@@ -157,7 +157,6 @@
 					"width": 300,
 					"height": 17,
 					"dataSource": "Form:C1466.info",
-					"stroke": "#696969",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -166,7 +165,8 @@
 					"dropping": "custom",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "Muted"
 				},
 				"Picture11": {
 					"type": "picture",
@@ -198,7 +198,7 @@
 					"stroke": "automatic",
 					"textAlign": "left",
 					"fontSize": 30,
-					"text": "How do I…",
+					"text": ":xliff:HDI_HowDoI",
 					"fontTheme": "normal"
 				},
 				"White90": {
@@ -220,7 +220,7 @@
 					"visibility": "hidden",
 					"textAlign": "center",
 					"fontTheme": "main",
-					"text": "Sorry, this \"How do I\" (HDI) example must\rbe used with a newer version of 4D\r({version} and above)"
+					"text": ":xliff:HDI_ErrorMain"
 				},
 				"ErrorSubText": {
 					"type": "text",
@@ -230,7 +230,21 @@
 					"height": 80,
 					"visibility": "hidden",
 					"textAlign": "center",
-					"text": "Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality."
+					"text": ":xliff:HDI_ErrorSub"
+				},
+				"LangMenu": {
+					"type": "dropdown",
+					"top": 482,
+					"left": 614,
+					"width": 90,
+					"height": 27,
+					"dataSource": "Form:C1466.languages",
+					"dataSourceTypeHint": "object",
+					"focusable": false,
+					"method": "ObjectMethods/LangMenu.4dm",
+					"events": [
+						"onDataChange"
+					]
 				}
 			}
 		}
@@ -245,5 +259,6 @@
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"fluentUI": true
 }
