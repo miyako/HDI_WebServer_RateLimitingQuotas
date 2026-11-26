@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="messages" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI_Title" resname="HDI_Title">
+        <source>get started with the 4D web server quotas system</source>
+        <target>4D Web サーバーのクォータ機能で流量制限を始めよう</target>
+      </trans-unit>
+      <trans-unit id="HDI_Info" resname="HDI_Info">
+        <source>4D web server</source>
+        <target>4D Web サーバー</target>
+      </trans-unit>
+      <trans-unit id="BtnClose" resname="BtnClose">
+        <source>Close</source>
+        <target>閉じる</target>
+      </trans-unit>
+      <trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</source>
+        <target>申し訳ありません。この「How do I」(HDI) サンプルは 4D View Pro の機能を紹介するものです。</target>
+      </trans-unit>
+      <trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+        <source>You must have a valid 4D View Pro license to continue.</source>
+        <target>続行するには有効な 4D View Pro ライセンスが必要です。</target>
+      </trans-unit>
+      <trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</source>
+        <target>申し訳ありません。この「How do I」(HDI) サンプルは 4D Write Pro の機能を紹介するものです。</target>
+      </trans-unit>
+      <trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+        <source>You must have a valid 4D Write Pro license to continue.</source>
+        <target>続行するには有効な 4D Write Pro ライセンスが必要です。</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Restarting" resname="HDI2_Restarting">
+        <source>Restarting… please wait</source>
+        <target>再起動中です… しばらくお待ちください</target>
+      </trans-unit>
+      <trans-unit id="HDI2_Restarted" resname="HDI2_Restarted">
+        <source>Web server restarted</source>
+        <target>Web サーバーを再起動しました</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
