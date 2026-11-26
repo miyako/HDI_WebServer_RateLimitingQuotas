@@ -7,6 +7,11 @@ Case of
 		
 		Form:C1466.quit:=False:C215
 		
+		Form:C1466.languages:={values: ["English"; "日本語"]; index: 0}
+		If (Get database localization(Current localization)="ja@")
+			Form:C1466.languages.index:=1
+		End if 
+		
 		
 		If (Form:C1466.info=Null:C1517)
 			OBJECT SET VISIBLE:C603(*; "labelInfo"; False:C215)
@@ -47,17 +52,15 @@ Case of
 				End if 
 			End if 
 			
-			$maintext:=OBJECT Get title:C1068(*; "TxtVersion")
-			$maintext:=Replace string:C233($maintext; "{version}"; $version)
+			$maintext:=Replace string:C233(Localized string("HDI_TxtVersion"); "{version}"; $version)
 			OBJECT SET TITLE:C194(*; "TxtVersion"; $maintext)
 			
 			If (Application version:C493<Form:C1466.minimumVersion)
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
 				
-				$maintext:=OBJECT Get title:C1068(*; "ErrorMainText")
-				$maintext:=Replace string:C233($maintext; "{version}"; $version)
+				$maintext:=Replace string:C233(Localized string("HDI_ErrorMain"); "{version}"; $version)
 				OBJECT SET TITLE:C194(*; "ErrorMainText"; $maintext)
 				
 				OBJECT SET VISIBLE:C603(*; "ErrorMainText"; True:C214)
@@ -73,17 +76,17 @@ Case of
 			If (Not:C34(Is license available:C714(Form:C1466.license)))
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Quit 4D")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string("BtnClose"))
 				
 				Case of 
 						
 					: (Form:C1466.license=4D View license:K44:4)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature."
-						$subtext:="You must have a valid 4D View Pro license to continue."
+						$maintext:=Localized string("ErrorViewProMain")
+						$subtext:=Localized string("ErrorViewProSub")
 						
 					: (Form:C1466.license=4D Write license:K44:2)
-						$maintext:="Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature."
-						$subtext:="You must have a valid 4D Write Pro license to continue."
+						$maintext:=Localized string("ErrorWriteProMain")
+						$subtext:=Localized string("ErrorWriteProSub")
 						
 				End case 
 				
